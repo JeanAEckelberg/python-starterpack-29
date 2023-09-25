@@ -1,5 +1,5 @@
 # This is a simple human strategy:
-# 6 Marksman, 6 Medics, and 4 Traceurs
+# 5 Marksman, 5 Medics, and 4 Traceurs
 # Move as far away from the closest zombie as possible
 # If there are any zombies in attack range, attack the closest
 # If a Medic's ability is available, heal a human in range with the least health
@@ -24,7 +24,7 @@ class SimpleHumanStrategy(Strategy):
             max_per_same_class: int,
             ) -> dict[CharacterClassType, int]:
         # The maximum number of special classes we can choose is 16
-        # Selecting 6 Marksmen, 6 Medics, and 4 Traceurs
+        # Selecting 5 Marksmen, 5 Medics, and 4 Traceurs
         # The other 4 humans will be regular class
         choices = {
             CharacterClassType.MARKSMAN: 5,
